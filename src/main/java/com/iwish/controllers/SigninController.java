@@ -62,7 +62,7 @@ public class SigninController {
             //wait for server response
             String response = (String) network.receiveResponse();
             
-            if("REGISTERATION_SUCCESS".equals(response)){
+            if("REGISTRATION_SUCCESS".equals(response)){
                 showAlert(Alert.AlertType.INFORMATION, "Success", "Registeration successful!");
                 backToLogin(event);
             }else{
