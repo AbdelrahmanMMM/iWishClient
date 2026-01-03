@@ -20,11 +20,14 @@ public class Main extends Application{
         //Points to login.fxml in the ui package
         Parent root = FXMLLoader.load(getClass().getResource("/com/iwish/ui/login.fxml"));
         
-        Scene scene = new Scene(root);
+        Scene scene = new Scene(root, 1000, 700);
         
         stage.setTitle("i-Wish - Welcome");
         stage.setScene(scene);
-        stage.setResizable(false); //to keep gui clean
+        stage.setResizable(true);
+        stage.setMinWidth(800);
+        stage.setMinHeight(600);
+
         stage.show();
     }
     
